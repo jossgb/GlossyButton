@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2A4C3D16A069C6002FF621 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = BE2A4C3C16A069C6002FF621 /* README.markdown */; };
+		BE2A4C4816A06D0B002FF621 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE2A4C4716A06D0B002FF621 /* License.txt */; };
 		BE727E7916A060410093E5B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE727E7816A060410093E5B4 /* UIKit.framework */; };
 		BE727E7B16A060410093E5B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE727E7A16A060410093E5B4 /* Foundation.framework */; };
 		BE727E7D16A060410093E5B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE727E7C16A060410093E5B4 /* CoreGraphics.framework */; };
@@ -18,9 +20,12 @@
 		BE727E8F16A060410093E5B4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE727E8E16A060410093E5B4 /* Default-568h@2x.png */; };
 		BE727E9216A060410093E5B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE727E9116A060410093E5B4 /* ViewController.m */; };
 		BE727E9516A060410093E5B4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE727E9316A060410093E5B4 /* ViewController.xib */; };
+		BE727E9D16A062DF0093E5B4 /* GlossyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BE727E9C16A0606D0093E5B4 /* GlossyButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE2A4C3C16A069C6002FF621 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		BE2A4C4716A06D0B002FF621 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		BE727E7416A060410093E5B4 /* GlossyButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlossyButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE727E7816A060410093E5B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE727E7A16A060410093E5B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +42,8 @@
 		BE727E9016A060410093E5B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BE727E9116A060410093E5B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BE727E9416A060410093E5B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		BE727E9B16A0606D0093E5B4 /* GlossyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlossyButton.h; sourceTree = "<group>"; };
+		BE727E9C16A0606D0093E5B4 /* GlossyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlossyButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +63,9 @@
 		BE727E6916A060410093E5B4 = {
 			isa = PBXGroup;
 			children = (
-				BE727E7E16A060410093E5B4 /* GlossyButton */,
+				BE2A4C4716A06D0B002FF621 /* License.txt */,
+				BE2A4C3C16A069C6002FF621 /* README.markdown */,
+				BE727E7E16A060410093E5B4 /* src */,
 				BE727E7716A060410093E5B4 /* Frameworks */,
 				BE727E7516A060410093E5B4 /* Products */,
 			);
@@ -80,9 +89,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE727E7E16A060410093E5B4 /* GlossyButton */ = {
+		BE727E7E16A060410093E5B4 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				BE727E9B16A0606D0093E5B4 /* GlossyButton.h */,
+				BE727E9C16A0606D0093E5B4 /* GlossyButton.m */,
 				BE727E8716A060410093E5B4 /* AppDelegate.h */,
 				BE727E8816A060410093E5B4 /* AppDelegate.m */,
 				BE727E9016A060410093E5B4 /* ViewController.h */,
@@ -90,6 +101,7 @@
 				BE727E9316A060410093E5B4 /* ViewController.xib */,
 				BE727E7F16A060410093E5B4 /* Supporting Files */,
 			);
+			name = src;
 			path = GlossyButton;
 			sourceTree = "<group>";
 		};
@@ -162,6 +174,8 @@
 				BE727E8D16A060410093E5B4 /* Default@2x.png in Resources */,
 				BE727E8F16A060410093E5B4 /* Default-568h@2x.png in Resources */,
 				BE727E9516A060410093E5B4 /* ViewController.xib in Resources */,
+				BE2A4C3D16A069C6002FF621 /* README.markdown in Resources */,
+				BE2A4C4816A06D0B002FF621 /* License.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE727E9D16A062DF0093E5B4 /* GlossyButton.m in Sources */,
 				BE727E8516A060410093E5B4 /* main.m in Sources */,
 				BE727E8916A060410093E5B4 /* AppDelegate.m in Sources */,
 				BE727E9216A060410093E5B4 /* ViewController.m in Sources */,
@@ -289,6 +304,7 @@
 				BE727E9A16A060410093E5B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
